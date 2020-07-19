@@ -1,0 +1,46 @@
+div.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px; /*let's try later doing all fr*/
+    grid-template-areas: 
+        "header header header"
+        "menu-nav main upcoming-events"
+        "footer footer footer";
+    height: 50vh;
+    grid-gap: 10px;
+}
+
+@media (max-width: 768px) {
+    div.container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "menu-nav"
+            "main"
+            "upcoming-events"
+            "footer";
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+nav#menu-nav {
+    grid-area: menu-nav;
+}
+
+h2 {
+    grid-area: sandwiches;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: upcoming-events;
+}
+
+footer {
+    grid-area: footer;
+}
