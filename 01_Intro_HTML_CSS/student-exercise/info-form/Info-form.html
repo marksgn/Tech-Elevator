@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact US</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>Contact us and share some cool information about yourself.</p>
+    </header>
+
+    <nav>
+        <a href="http://127.0.0.1:5501/01_Intro_HTML_CSS/student-exercise/index.html">Back to Fan-Page</a>
+    </nav>
+    <main>
+        <h2>Contact Us Form</h2>
+        <form method="POST" action="/">
+            <div>
+                <label for="messengerName">Name:</label>
+                <input id="messengerName" name="messengerName" type="text" required />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+            <div>
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input id="dateOfBirth" name="dateOfBirth" type="date" />
+            </div>
+            <div>
+                <label for="favoriteColor">Favorite Color:</label>
+                <input id="favoriteColor" name="favoriteColor" type="color" />
+            </div>
+            <div>
+                <label for="favoriteNumber">Favorite Number:</label>
+                <input id="favoriteNumber" name="favoriteNumber" type="number" req />
+            </div>
+            <div>
+                <label for="confirmDataIsCorrect">Confirm Data is Correct:</label>
+                <input id="confirmDataIsCorrect" name="confirmDataIsCorrect" type="checkbox" />
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+
+        </form>
+    </main>
+</body>
